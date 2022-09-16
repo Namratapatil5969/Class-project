@@ -69,23 +69,27 @@ namespace class_program
             total = sub1 + sub2;
             per = total / 2;
         }
-
+        public override string ToString()
+        {
+            return$"Roll no :{roll_no},Name :{name},Sub1 :{sub1},Sub2 :{sub2}, Percentage :{per}";
+        }
 
     }
     internal class program
     {
         static void Main(string[] args)
         {
-            student2 s1 = new student2 { roll_no = 10,name="xyz",sub1=70,sub2=75 };
+           student2 s1=new student2 { roll_no = 1, name="xyz", sub1 = 72, sub2=80};
             s1.Percentage();
-            Console.WriteLine($"Roll no :{s1.roll_no} Name :{s1.name} Percentage :{s1.per}");
+            Console.WriteLine($"{s1}");
 
-            student2 s2 = new student2 { roll_no = 15, name = "abc", sub1=60,sub2=68 };
+            student2 s2 = new student2 { roll_no = 5, name = "abc", sub1 = 76, sub2 = 82 };
             s2.Percentage();
-            Console.WriteLine($"Roll no :{s2.roll_no} Name :{s2.name} Percentage :{s2.per}");
+            Console.WriteLine($"{s2}");
 
-            student2 s3 = new student2 { roll_no = 18, name = "xyz", per = 85 };
-            Console.WriteLine($"Roll no :{s3.roll_no} Name :{s3.name} Percentage :{s3.per}");
+            student2 s3 = new student2 { roll_no = 5, name = "stu", sub1 = 74, sub2 = 84 };
+            s3.Percentage();
+            Console.WriteLine($"{s3}");
         }
             
     }

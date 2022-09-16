@@ -49,36 +49,36 @@ using System.Threading.Tasks;
 
 
 
-namespace Class_program
-{
-    public class Rectangle
-    {
-        int length, breadth;
-        double peri;
+//namespace Class_program
+//{
+//    public class Rectangle
+//    {
+//        int length, breadth;
+//        double peri;
 
-        public void Assignvalue()
-        {
-            length = 8;
-            breadth = 10;
-        }
+//        public void Assignvalue()
+//        {
+//            length = 8;
+//            breadth = 10;
+//        }
 
-        public void Perimeter()
-        {
-            peri = 2 * (length + breadth);
-        }
-        public string displayvalue()
-        {
-            return $"Length:{length}\nBreadth:{breadth}\nPerimeter is:{peri}";
-        }
-    }
-    internal class program
-    {
-        static void Main(string[] args)
-        {
-            Rectangle R1 = new Rectangle();
-            R1.Assignvalue();
-            R1.Perimeter();
-            Console.WriteLine(R1.displayvalue());
-        }
-    }
-}
+//        public void Perimeter()
+//        {
+//            peri = 2 * (length + breadth);
+//        }
+//        public string displayvalue()
+//        {
+//            return $"Length:{length}\nBreadth:{breadth}\nPerimeter is:{peri}";
+//        }
+//    }
+//    internal class program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Rectangle R1 = new Rectangle();
+//            R1.Assignvalue();
+//            R1.Perimeter();
+//            Console.WriteLine(R1.displayvalue());
+//        }
+//    }
+//}

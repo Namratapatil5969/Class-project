@@ -51,47 +51,47 @@ using System.Threading.Tasks;
 
 
 //     // Home work-Auto implemented property
-namespace class_program
+//namespace class_program
 
-    {
-    public class student2
-    {
-        public int roll_no { get; set; }
-        public int sub1 { get; set; }
-        public int sub2 { get; set; }
-        public int total { get; set; }
-        public string name { get; set; }
-        public double per { get; set; }
+    //{
+    //public class student2
+    //{
+    //    public int roll_no { get; set; }
+    //    public int sub1 { get; set; }
+    //    public int sub2 { get; set; }
+    //    public int total { get; set; }
+    //    public string name { get; set; }
+    //    public double per { get; set; }
         
 
-        public void Percentage()
-        {
-            total = sub1 + sub2;
-            per = total / 2;
-        }
-        public override string ToString()
-        {
-            return$"Roll no :{roll_no},Name :{name},Sub1 :{sub1},Sub2 :{sub2}, Percentage :{per}";
-        }
+    //    public void Percentage()
+    //    {
+    //        total = sub1 + sub2;
+    //        per = total / 2;
+    //    }
+    //    public override string ToString()
+    //    {
+    //        return$"Roll no :{roll_no},Name :{name},Sub1 :{sub1},Sub2 :{sub2}, Percentage :{per}";
+    //    }
 
-    }
-    internal class program
-    {
-        static void Main(string[] args)
-        {
-           student2 s1=new student2 { roll_no = 1, name="xyz", sub1 = 72, sub2=80};
-            s1.Percentage();
-            Console.WriteLine($"{s1}");
+    //}
+    //internal class program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //       student2 s1=new student2 { roll_no = 1, name="xyz", sub1 = 72, sub2=80};
+    //        s1.Percentage();
+    //        Console.WriteLine($"{s1}");
 
-            student2 s2 = new student2 { roll_no = 5, name = "abc", sub1 = 76, sub2 = 82 };
-            s2.Percentage();
-            Console.WriteLine($"{s2}");
+    //        student2 s2 = new student2 { roll_no = 5, name = "abc", sub1 = 76, sub2 = 82 };
+    //        s2.Percentage();
+    //        Console.WriteLine($"{s2}");
 
-            student2 s3 = new student2 { roll_no = 5, name = "stu", sub1 = 74, sub2 = 84 };
-            s3.Percentage();
-            Console.WriteLine($"{s3}");
-        }
+    //        student2 s3 = new student2 { roll_no = 5, name = "stu", sub1 = 74, sub2 = 84 };
+    //        s3.Percentage();
+    //        Console.WriteLine($"{s3}");
+    //    }
             
-    }
+    //}
 
-}
+//}

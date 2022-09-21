@@ -42,20 +42,70 @@ namespace Class_program
         //    }
         //}
 
+        //static void Main(string[] args)
+        //{
+        //    string[] names = new string[5];
+        //    Console.WriteLine("Enter 5 names");
+        //    for(int i=0; i < names.Length; i++)
+        //    {
+        //        names[i] = Convert.ToString(Console.ReadLine());
+        //    }
+        //    Console.WriteLine("-----------------");
+        //    for(int  i=0; i < names.Length; i++)
+        //    {
+        //        Console.WriteLine($"names{i}={names[i]}");
+        //    }
+        //}
+
+
+        //static void Main(string[] args)
+        //{
+        //    string[] names = new string[5]{"Reena","Arya","Riya","Disha","Vedha" };
+        //    string[] nums = new string[3];
+
+        //    Console.WriteLine("Original array");
+
+        //    foreach (string i in names)
+        //    {
+        //        Console.WriteLine(i);
+        //    }
+        //    Console.WriteLine("sorted array");
+        //    //Array.Sort(names);
+        //     //Array.Reverse(names);
+        //    Array.Clear(names, 2, 2);
+        //    //Array.Copy(names, 1, nums,0, 3);
+        //    // Array.Copy(names, nums, names.Length);
+        //    //int index = Array.IndexOf(names, "Disha");
+        //    //Console.WriteLine($"index of Disha is {index}");
+        //    foreach (string i in names)
+        //    {
+        //        Console.WriteLine(i);
+        //    }
+        //}
+
         static void Main(string[] args)
         {
-            string[] names = new string[5];
-            Console.WriteLine("Enter 5 names");
-            for(int i=0; i < names.Length; i++)
+            // 3 - row
+            // 4- col
+            int[,] arr = new int[3, 4]
             {
-                names[i] = Convert.ToString(Console.ReadLine());
-            }
-            Console.WriteLine("-----------------");
-            for(int  i=0; i < names.Length; i++)
+               { 1,2,3,4},
+               {5,6,7,8 },
+               {9,10,11,12 }
+            };
+
+            for (int i = 0; i < arr.GetLength(0); i++)  // GetLength(0) -> specifies row size
             {
-                Console.WriteLine($"names{i}={names[i]}");
+                for (int j = 0; j < arr.GetLength(1); j++)  // GetLength(1)-> specifies col size
+                {
+                    Console.Write($"arr[{i},{j}]= {arr[i, j]}  ");
+                }
+                Console.WriteLine();
             }
         }
+
+
+
 
 
 

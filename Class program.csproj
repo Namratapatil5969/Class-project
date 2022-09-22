@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Calculation.cs" />
     <Compile Include="Circle.cs" />
+    <Compile Include="Class_Array.cs" />
     <Compile Include="course.cs" />
     <Compile Include="Date.cs" />
     <Compile Include="Employee.cs" />

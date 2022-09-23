@@ -147,45 +147,33 @@ namespace Class_program
 
 
         //6)Remove a given element from an array.......
-        //static void Main(string[] args)
+        static void Main(string[] args)
 
-        //{
-        //    int[] arr = new int[7] { 1, 2, 3, 2, 4, 3, 5 };
-        //    //int item;
-        //int pos = -1;
+        {
+            int[] arr = new int[7] { 1, 2, 3, 2, 4, 3, 5 };
+            int item;
 
-        //foreach (var v in arr)
-        //{
-        //    Console.WriteLine(v);
-        //}
+            foreach (var v in arr)
+            {
+                Console.WriteLine(v);
+            }
 
-        //Console.WriteLine("Enter item to delete");
-        //item = int.Parse(Console.ReadLine());
-        //for (int i = 0; i < arr.Length; i++)
-        //{
-        //    if (item == arr[i])
-        //    {
-        //        pos = i;
-        //        break;
-        //    }
-        //}
-        //if (pos == -1)
-        //{
-        //    Console.WriteLine("Element not in aaray");
-        //}
-        //else
-        //{
-        //    for (int i = pos; i < arr.Length-1; i++)
-        //    {
-        //        arr[i] = arr[i + 1];
-        //    }
-        //    Console.WriteLine("Array after deletion:");
-        //    for (int i = 0; i < 6; i++)
-        //    {
-        //        Console.WriteLine(arr[i]);
-        //    }
-        //    Console.WriteLine();
-        //}
+            Console.WriteLine("Enter item to delete");
+            item = int.Parse(Console.ReadLine());
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == item)
+                {
+                    arr[i] = 0;
+                    break;
+                }
+            }
+            foreach (var v in arr)
+            {
+                Console.WriteLine(v);
+            }
+
+        }
 
 
         //foreach (var v in arr)
@@ -207,9 +195,69 @@ namespace Class_program
 
 
         //7)Find a contiguous subarray whose sum is equal to the given number
+        //static void Main(string[] args)
+
+        //{
+        //    int[] arr = new int[] { 12, 4, 2, 10, 5, 1 };
+        //    int item;
+        //    Console.WriteLine("Enter the required sum");
+        //    item = int.Parse(Console.ReadLine());
+        //    int sum = 0;
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        sum = arr[i];
+        //        for (int j = i + 1; j < arr.Length; j++)
+        //        {
+        //            sum = sum + arr[j];
+        //            if (sum == item)
+        //            {
+        //                for (int k = i; k <= j; k++)
+        //                {
+        //                    Console.WriteLine(arr[k]);
+        //                }
+        //                Console.WriteLine();
+        //            }
+        //            else if (sum > item)
+        //            {
+        //                break;
+        //            }
+        //        }
+        //    }
+
+        //}
+
 
 
         //8)Divide array in two parts and reverse the two parts
+        //public static void Main(string[] args)
+        //{
+        //       int[] arr=new int[] { 1, 2, 3, 4, 5, 6 };
+        //    int mid = arr.Length / 2;
+        //    int[] first=arr.Take(mid).ToArray();
+        //    int[] second=arr.Skip(mid).ToArray();
+        //    foreach (var value in arr)
+        //        {
+        //           Console.WriteLine(value);
+        //        }
+        //    Console.WriteLine(String.Join(",",first));
+        //    Console.WriteLine(String.Join(",",second));
+
+        //    Console.WriteLine("Reverse Element");
+
+        //    Array.Reverse(first);
+        //    foreach (var value in first)
+        //    {
+        //        Console.Write(value);
+        //    }
+        //    Console.WriteLine();
+        //    Array.Reverse(second);
+        //    foreach (var value in second)
+        //    {
+        //        Console.Write(value);
+        //    }
+        //    Console.WriteLine();
+
+        //}
 
 
 
